@@ -45,6 +45,15 @@ const DUMMY_DATA= [
         description:
           "Bangtan's reign over the world",
       },
+      {
+        id: 'm6',
+        title: 'BTS Movies',
+        image:
+          'https://channel-korea.com/wp-content/uploads/2017/10/C6wG-ekWYAAr7az.jpg',
+        address: '5 Seasons',
+        description:
+          "Bangtan's reign over the world",
+      },
 ]
 function AllMeetupsPage() {
   return (
