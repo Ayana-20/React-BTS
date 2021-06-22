@@ -49,7 +49,7 @@ const DUMMY_DATA= [
 function AllMeetupsPage() {
   return (
     <section>
-      <h1>BTS Bon Voyage</h1>
+      <h1>BTS Content</h1>
       <MeetupList meetups={DUMMY_DATA} />
     </section>
   );
