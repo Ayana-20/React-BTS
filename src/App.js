@@ -4,9 +4,10 @@
 //so now when path=/ is seen by switch it will automatically only render all meetups. so we put exact=true in that path
 //exact tells switch to match the path entirely not just if the path begins here
 import {Route, Switch} from'react-router-dom';
-import AllMeetupsPage from './pages/AllMeetups';
-import FavoritesPage from './pages/Favorites';
-import NewMeetupPage from './pages/NewMeetup';
+import BtsContent from './pages/BtsContent';
+import Blogs from './pages/Blogs';
+import ArmyExpress from './pages/ArmyExpress';
+import BookmarksPage from './pages/Bookmarks';
 import Layout from './components/layout/Layout';
 
 function App() {
@@ -15,13 +16,16 @@ function App() {
       <Layout>
       <Switch>
         <Route path="/" exact>
-          <AllMeetupsPage />
+          <BtsContent />
         </Route>
-        <Route path="/new-meetup">
-          <NewMeetupPage />
+        <Route path="/army-express">
+          <ArmyExpress />
         </Route>
-        <Route path="/favorites">
-          <FavoritesPage />
+        <Route path="/blogs">
+          <Blogs />
+          </Route>
+        <Route path="/bookmarks">
+          <BookmarksPage />
         </Route>
       </Switch>
       </Layout>
